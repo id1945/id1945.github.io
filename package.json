@@ -1,0 +1,23 @@
+{
+  "name": "bitman",
+  "version": "0.0.1",
+  "description": "bitman",
+  "homepage": "http://id1945.github.io/bitman",
+  "dependencies": {
+    "express": "*"
+  },
+  "engine": "node >=0.6.x",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "bitman",
+  "license": "bitman",
+  "bugs": {
+    "url": ""
+  }
+}
