@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/share/images/uranium.png" />
+    <title>ID1945 Tools 2018</title>
+    <!-- CDN bootstrap v4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Template -->
+    <script src="/share/template.js"></script>
+    <link rel="stylesheet" href="/share/css/style.css">
+    <!--AngularJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    <!-- import clock digit -->
+    <style type="text/css">
+        .jsbank_sample_cont {
+            margin: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .jsbank_sample_tit {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: auto;
+            background-color: #c0c0c0;
+            border: 5px solid #a0a0a0;
+            color: black;
+            text-align: center;
+        }
+
+        .jsbank_copy_right {
+            text-decoration: none;
+        }
+
+        .jsbank_link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        pre,
+        .codehighlight {
+            background-color: #EFEFEF;
+            font-size: 13px;
+            width: 98%;
+            border: 1px dashed gray;
+            padding: 5px;
+        }
+    </style>
+    <script src="https://www.javascriptbank.com/javascript/time/CoolClock_Super_nice_Javascript_Analog_Clock/coolclock.js" type="text/javascript"></script>
+    <script src="https://www.javascriptbank.com/javascript/time/CoolClock_Super_nice_Javascript_Analog_Clock/moreskins.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav id="nav">
+        <h3 class="text-center mt-0 mb-0 alert alert-success" style="padding: 23px 0">
+            <a href="https://github.com/id1945" target="_blank">
+                <span class="alert-success">Github.com/id1945</span>
+            </a>
+        </h3>
+        <div class="pl-3 pr-3 pt-0 pb-3">
+            <div class="text-center" style="margin-top:6%">
+                <img itemprop="image" src="/share/images/uranium.png" alt="Reactjs CDN" class="app-logo">
+                <h4 class="sidebarHead">
+                    <strong itemprop="articleSection">ID1945 Tools</strong>
+                </h4>
+            </div>
+            <div id="nav-bar"></div>
+        </div>
+        <div class="alert alert-warning mb-0 fixFacebookAdd text-center">
+            <a target="_blank" href="https://facebook.com/id1892"><span class="alert-warning">https://facebook.com/id1892</span></a>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="ml-2 mr-2">
+            <h1 class="text-center alert alert-success pt-3 pb-3 mt-0 mb-0">
+                <a href="/">
+                    <span class="alert-success">www.id1945.github.io</span>
+                </a>
+            </h1>
+            <div class="m-2">
+                <div ng-app="myApp" ng-controller="myController">
+                    <table align="center" style="background: #FFFFFF">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <canvas style="width: 170px; height: 170px;" height="170" width="170" id="c1" class="CoolClock"></canvas>
+                                    <br>
+                                    <canvas style="width: 170px; height: 170px;" height="170" width="170" id="c2" class="CoolClock:chunkySwiss"></canvas>
+                                    <br>
+                                    <canvas style="width: 170px; height: 170px;" height="170" width="170" id="c4" class="CoolClock:machine"></canvas>
+                                </td>
+                                <td>
+                                    <canvas style="width: 380px; height: 380px;" height="380" width="380" id="c5" class="CoolClock:fancy:190"></canvas>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table style="background: #FFFFFF">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">New York<br>
+                                                    <canvas style="width: 60px; height: 60px;" height="60" width="60" id="c6" class="CoolClock:chunkySwiss:30:noSeconds:-4 leftRightPad"></canvas>
+                                                </td>
+                                                <td align="center">London<br>
+                                                    <canvas style="width: 60px; height: 60px;" height="60" width="60" id="c7" class="CoolClock::30:noSeconds:+1 leftRightPad"></canvas>
+                                                </td>
+                                                <td align="center">Townsville<br>
+                                                    <canvas style="width: 60px; height: 60px;" height="60" width="60" id="c8" class="CoolClock:fancy:30:noSeconds:+10 leftRightPad"></canvas>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="width: 70%;">
+
+                        <table style="background: #FFFFFF">
+                            <tbody>
+                                <tr>
+                                    <td>
+
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="u22" class="CoolClock:classic"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="u33" class="CoolClock:modern"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="u44" class="CoolClock:simple"></canvas>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s01" class="CoolClock:securephp"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s02" class="CoolClock:Tes2"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s03" class="CoolClock:Lev"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s04" class="CoolClock:Sand"></canvas>
+                                        <br>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s05" class="CoolClock:Sun"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s06" class="CoolClock:Tor"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s07" class="CoolClock:Cold"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s08" class="CoolClock:Babosa"></canvas>
+                                        <br>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s09" class="CoolClock:Tumb"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s10" class="CoolClock:Stone"></canvas>
+                                        <canvas style="width: 170px; height: 170px;" height="170" width="170" id="s11" class="CoolClock:Disc"></canvas>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/clock-digit/App.js"></script>
+</body>
+
+</html>
